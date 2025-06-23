@@ -14,7 +14,14 @@ namespace Njangui.Domain.Entities
         public DateTime EndDate { get; set; }
 
         public Guid TontineId { get; set; }
-        
+
         public Guid BeneficiaryId { get; set; }
+
+        public TourStatut Status { get; set; }
+
+        private DateTime CreatedAt { get; set; }
+
+        private DateTime? ClosedAt  { get; set; }
+        
     }
 }

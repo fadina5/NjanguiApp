@@ -1,6 +1,14 @@
-﻿namespace Njangui.Domain;
+﻿using Njangui.Domain.Entities;
 
-public class Class1
+namespace Njangui.Domain;
+
+public class Tontine
 {
+    public Guid Id { get; set; }
+    public string Name { get; set; }
+    public List<Membre> Membres { get; set; } = [];
 
+    public List<Tour> Tours { get; set; } = [];
+    
+    private DateTime CreatedAt { get; set; }
 }
